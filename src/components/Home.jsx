@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
 export const Home = () => {
@@ -25,11 +24,8 @@ export const Home = () => {
           {/* The group classname here is to make the rotate-90 effect apply when the user points the button too */}
           <button className="group hover:bg-pink-600 hover:border-pink-600 flex items-center px-6 py-3 my-2 text-white border-2">
             <Link to="work" smooth={true} duration={500}>
-              Work
+              Click to scroll to my work
             </Link>
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
           </button>
         </div>
       </div>
