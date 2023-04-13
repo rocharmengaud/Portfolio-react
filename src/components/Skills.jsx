@@ -6,6 +6,7 @@ import ReactIMG from '../assets/react.png';
 import FireBase from '../assets/firebase.png';
 import GitHub from '../assets/github.png';
 import TailwindCSS from '../assets/tailwind_css.png';
+import TypeScript from '../assets/TypeScript.png';
 
 export const Skills = () => {
   return (
@@ -45,6 +46,10 @@ export const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={TailwindCSS} alt="TailwindCSS icon"></img>
             <p className="my-4">Tailwind CSS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={TypeScript} alt="Typescript icon"></img>
+            <p className="my-4">Typescript</p>
           </div>
         </div>
       </div>
