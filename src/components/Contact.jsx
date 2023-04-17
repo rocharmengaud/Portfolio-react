@@ -10,8 +10,8 @@ export const Contact = () => {
         </div>
         <input type="text" placeholder="Name" name="name" className="bg-[#ccd6f6] p-2" />
         <input type="email" placeholder="Email" name="email" className="my-4 p-2 bg-[#ccd6f6]" />
-        <textarea name="message" rows="10" className="bg-[#ccd6f6] p-2" placeholder="Message"></textarea>
-        <button className="hover:bg-pink-600 hover:border-pink-600 flex items-center px-4 py-3 mx-auto my-8 text-white border-2">Contact me</button>
+        <textarea name="message" rows="8" className="bg-[#ccd6f6] p-2" placeholder="Message"></textarea>
+        <button className="hover:bg-pink-600 hover:border-pink-600 flex items-center px-4 py-3 mx-auto mt-8 text-white border-2">Contact me</button>
       </form>
     </div>
   );

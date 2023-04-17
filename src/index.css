@@ -19,7 +19,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 60px;
+
+  @media (min-width: 640px) {
+    height: 250px;
+  }
 }
 
 .content-div:hover {

@@ -8,14 +8,18 @@ export const WorkItem = ({ img, codeURL, demoURL }) => {
       className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
     >
       {/* Hover effects */}
-      <div className="group-hover:opacity-100 opacity-0">
-        <span className="text-2xl font-bold tracking-wider text-white">PLACEHOLDER</span>
-        <div className="pt-8 text-center">
+      <div className="group-hover:opacity-100 sm:flex-col sm:gap-8 flex items-center gap-2 opacity-0">
+        <span className="sm:text-2xl text-md font-bold tracking-wider text-white">PLACEHOLDER</span>
+        <div className="flex">
           <a href="/">
-            <button className="px-4 py-3 m-2 text-lg font-bold text-center text-gray-700 bg-white rounded-lg">Demo</button>
+            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg">
+              Demo
+            </button>
           </a>
           <a href="/">
-            <button className="px-4 py-3 m-2 text-lg font-bold text-center text-gray-700 bg-white rounded-lg">Code</button>
+            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg">
+              Code
+            </button>
           </a>
         </div>
       </div>

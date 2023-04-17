@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import RAlogo from '../assets/RA_logo.png';
 import { Social } from './Social';
@@ -14,8 +13,7 @@ export const Navbar = () => {
   const social = [
     { name: 'Linked In', icon: <FaLinkedin size={30} />, url: '/', bgColor: 'bg-blue-600' },
     { name: 'Github', icon: <FaGithub size={30} />, url: 'https://github.com/rocharmengaud', bgColor: 'bg-[#333333]' },
-    { name: 'Email', icon: <HiOutlineMail size={30} />, url: '/', bgColor: 'bg-[#6fc2b0]' },
-    { name: 'Resume', icon: <BsFillPersonLinesFill size={30} />, url: '/', bgColor: 'bg-[#565f69]' },
+    { name: 'Resume', icon: <BsFillPersonLinesFill size={30} />, url: '/', bgColor: 'bg-[#6fc2b0]' },
   ];
 
   return (
@@ -30,7 +28,7 @@ export const Navbar = () => {
       </div>
       <MobileMenu handleClick={handleClick} nav={nav} />
       {/* Social icons */}
-      <div className="hidden fixed lg:flex flex-col top-[70%] left-0">
+      <div className="lg:flex fixed bottom-0 left-0 flex-col sm:top-[75%]">
         <ul>
           {social.map((social) => (
             <Social key={social.name} {...social} />

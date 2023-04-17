@@ -17,7 +17,6 @@ export const Home = () => {
           >
             OpenClassRoom's front-end javascript react course
           </a>{' '}
-          {''}
           and now looking for a job
         </p>
         <div>
