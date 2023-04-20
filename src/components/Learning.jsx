@@ -1,20 +1,20 @@
 import React from 'react';
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import ReactIMG from '../assets/react.png';
-import NextJs from '../assets/NextJs.png';
+import Firebase from '../assets/firebase.png';
+import MongoDB from '../assets/mongo.png';
+import MaterialUI from '../assets/MUI.png';
+import ChakraUI from '../assets/ChakraUI.png';
+import Prisma from '../assets/Prisma.png';
 import TypeScript from '../assets/TypeScript.png';
 import { Skill } from './Skill';
 
 export const Learning = () => {
   const skills = [
+    { name: 'Material UI', icon: MaterialUI },
+    { name: 'Chakra UI', icon: ChakraUI },
     { name: 'TypeScript', icon: TypeScript },
-    { name: 'HTML', icon: HTML },
-    { name: 'CSS', icon: CSS },
-    { name: 'JavaScript', icon: JavaScript },
-    { name: 'React', icon: ReactIMG },
-    { name: 'Next JS', icon: NextJs },
+    { name: 'Mongo DB', icon: MongoDB },
+    { name: 'Firebase', icon: Firebase },
+    { name: 'Prisma', icon: Prisma },
   ];
 
   return (
