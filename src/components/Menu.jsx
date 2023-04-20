@@ -24,6 +24,11 @@ export const Menu = () => {
         </Link>
       </li>
       <li>
+        <Link to="learning" smooth={smoothScroll} duration={scrollDuration}>
+          Learning
+        </Link>
+      </li>
+      <li>
         <Link to="work" smooth={smoothScroll} duration={scrollDuration}>
           Work
         </Link>
