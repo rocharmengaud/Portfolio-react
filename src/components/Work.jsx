@@ -5,7 +5,7 @@ import { WorkItem } from './WorkItem';
 
 export const Work = () => {
   const workItems = [
-    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name1', stacks: 'Tailwind, Blabla', id: 1 },
+    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name1', stacks: 'Tailwind, Blabla, Aggadga, solfdsl, uifvgee', id: 1 },
     { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name2', stacks: 'Tailwind, Bloblo', id: 2 },
     { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name2', stacks: 'Tailwind, Blabla', id: 3 },
     { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name4', stacks: 'Tailwind, Blabla', id: 4 },
