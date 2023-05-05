@@ -5,10 +5,12 @@ import { Navbar } from './components/Navbar';
 import { Skills } from './components/Skills';
 import { Learning } from './components/Learning';
 import { Work } from './components/Work';
+import { InfoModal } from './components/InfoModal';
 
 function App() {
   return (
     <div className="App">
+      <InfoModal />
       <Navbar />
       <Home />
       <About />

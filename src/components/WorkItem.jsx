@@ -1,4 +1,13 @@
-export const WorkItem = ({ img, codeURL, demoURL }) => {
+import { useState } from 'react';
+import { InfoModal } from './InfoModal';
+
+export const WorkItem = ({ img, codeURL, demoURL, name, stacks }) => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <div
       /* The reason backticks are needed here instead of regular quotes is because the style property is a JavaScript object, 
@@ -9,20 +18,27 @@ export const WorkItem = ({ img, codeURL, demoURL }) => {
     >
       {/* Hover effects */}
       <div className="group-hover:opacity-100 sm:flex-col sm:gap-8 flex items-center gap-2 opacity-0">
-        <span className="sm:text-2xl text-md font-bold tracking-wider text-white">PLACEHOLDER</span>
+        <span className="sm:text-2xl text-md font-bold tracking-wider text-white">{name}</span>
         <div className="flex">
           <a href="/">
-            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg">
+            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-90">
               Demo
             </button>
           </a>
           <a href="/">
-            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg">
+            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-90">
               Code
             </button>
           </a>
+          <button
+            onClick={toggleModal}
+            className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg"
+          >
+            Infos
+          </button>
         </div>
       </div>
+      {modal && <InfoModal modal={modal} toggleModal={toggleModal} stacks={stacks} />}
     </div>
   );
 };

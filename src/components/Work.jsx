@@ -5,12 +5,12 @@ import { WorkItem } from './WorkItem';
 
 export const Work = () => {
   const workItems = [
-    { img: WorkIMG, codeURL: '/', demoURL: '/', id: 1 },
-    { img: RealEstate, codeURL: '/', demoURL: '/', id: 2 },
-    { img: WorkIMG, codeURL: '/', demoURL: '/', id: 3 },
-    { img: RealEstate, codeURL: '/', demoURL: '/', id: 4 },
-    { img: WorkIMG, codeURL: '/', demoURL: '/', id: 5 },
-    { img: RealEstate, codeURL: '/', demoURL: '/', id: 6 },
+    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name1', stacks: 'Tailwind, Blabla', id: 1 },
+    { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name2', stacks: 'Tailwind, Bloblo', id: 2 },
+    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name2', stacks: 'Tailwind, Blabla', id: 3 },
+    { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name4', stacks: 'Tailwind, Blabla', id: 4 },
+    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name5', stacks: 'Tailwind, Blabla', id: 5 },
+    { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name6', stacks: 'Tailwind, Blabla', id: 6 },
   ];
 
   return (
