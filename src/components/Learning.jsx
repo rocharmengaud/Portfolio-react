@@ -9,12 +9,12 @@ import { Skill } from './Skill';
 
 export const Learning = () => {
   const skills = [
+    { name: 'TypeScript', icon: TypeScript },
     { name: 'Material UI', icon: MaterialUI },
     { name: 'Chakra UI', icon: ChakraUI },
-    { name: 'TypeScript', icon: TypeScript },
+    { name: 'Prisma', icon: Prisma },
     { name: 'Mongo DB', icon: MongoDB },
     { name: 'Firebase', icon: Firebase },
-    { name: 'Prisma', icon: Prisma },
   ];
 
   return (

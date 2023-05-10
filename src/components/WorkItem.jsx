@@ -20,19 +20,19 @@ export const WorkItem = ({ img, codeURL, demoURL, name, stacks }) => {
       <div className="group-hover:opacity-100 sm:flex-col sm:gap-8 flex items-center gap-2 opacity-0">
         <span className="sm:text-2xl text-md font-bold tracking-wider text-white">{name}</span>
         <div className="flex">
-          <a href="/">
-            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-90">
+          <a href={demoURL}>
+            <button className="sm:px-2 sm:py-2 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-[85%]">
               Demo
             </button>
           </a>
-          <a href="/">
-            <button className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-90">
+          <a href={codeURL}>
+            <button className="sm:px-2 sm:py-2 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-[85%]">
               Code
             </button>
           </a>
           <button
             onClick={toggleModal}
-            className="sm:px-4 sm:py-3 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg"
+            className="sm:px-2 sm:py-2 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-[85%]"
           >
             Infos
           </button>

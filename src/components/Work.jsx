@@ -5,12 +5,54 @@ import { WorkItem } from './WorkItem';
 
 export const Work = () => {
   const workItems = [
-    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name1', stacks: 'Tailwind, Blabla, Aggadga, solfdsl, uifvgee', id: 1 },
-    { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name2', stacks: 'Tailwind, Bloblo', id: 2 },
-    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name2', stacks: 'Tailwind, Blabla', id: 3 },
-    { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name4', stacks: 'Tailwind, Blabla', id: 4 },
-    { img: WorkIMG, codeURL: '/', demoURL: '/', name: 'Name5', stacks: 'Tailwind, Blabla', id: 5 },
-    { img: RealEstate, codeURL: '/', demoURL: '/', name: 'Name6', stacks: 'Tailwind, Blabla', id: 6 },
+    {
+      img: WorkIMG,
+      codeURL: 'https://github.com/rocharmengaud/twitter-clone',
+      demoURL: '/',
+      name: 'Twitter Clone',
+      stacks: 'React, Tailwind, Next, Prisma, MongoDB, Axios, NextAuth & Vercel',
+      id: 1,
+    },
+    {
+      img: RealEstate,
+      codeURL: 'https://github.com/rocharmengaud/netflix-clone',
+      demoURL: '/',
+      name: 'Netflix Clone',
+      stacks: 'React, Tailwind, Next, Firebase, & Vercel',
+      id: 2,
+    },
+    {
+      img: WorkIMG,
+      codeURL: 'https://github.com/rocharmengaud/Weather-app',
+      demoURL: '/',
+      name: 'Weather app',
+      stacks: 'React, Next, Typescript, Tailwind, Fetch & Vercel',
+      id: 3,
+    },
+    {
+      img: RealEstate,
+      codeURL: 'https://github.com/rocharmengaud/Shopping-app',
+      demoURL: '/',
+      name: 'Shopping app',
+      stacks: 'Vite, React, TypeScript, React-Bootstrap, Bootstrap css & Vercel',
+      id: 4,
+    },
+    {
+      img: WorkIMG,
+      codeURL: 'https://github.com/rocharmengaud/Kasa',
+      demoURL: '/',
+      name: 'Kasa',
+      stacks: 'React, Tailwind, JSON Data & Vercel',
+      id: 5,
+    },
+    {
+      img: RealEstate,
+      codeURL: 'https://github.com/rocharmengaud/Sportsee',
+      demoURL: '/',
+      name: 'Sportsee ',
+      stacks: 'React, Recharts, Proptypes, Fetch w/ classes & Vercel',
+      id: 6,
+    },
   ];
 
   return (
