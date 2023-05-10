@@ -13,7 +13,12 @@ export const Navbar = () => {
   const social = [
     { name: 'Linked In', icon: <FaLinkedin size={30} />, url: '/', bgColor: 'bg-blue-600' },
     { name: 'Github', icon: <FaGithub size={30} />, url: 'https://github.com/rocharmengaud', bgColor: 'bg-[#333333]' },
-    { name: 'Resume', icon: <BsFillPersonLinesFill size={30} />, url: '/', bgColor: 'bg-[#6fc2b0]' },
+    {
+      name: 'Resume',
+      icon: <BsFillPersonLinesFill size={30} />,
+      url: 'https://mega.nz/file/19MFSZ5C#lKgR-DZwBGZeW5ohIw6D6eQuIAjVx4227-JoeYG0j-s',
+      bgColor: 'bg-[#6fc2b0]',
+    },
   ];
 
   return (
