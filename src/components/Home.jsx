@@ -9,7 +9,7 @@ export const Home = () => {
         <p className="text-white">Hello, my name is</p>
         <h1 className="text-2xl sm:text-4xl font-bold text-[#ccd6f6]">Roch ARMENGAUD</h1>
         <h2 className="text-2xl sm:text-4xl font-bold text-[#8892b0]">I'm a junior front-end developer</h2>
-        <p className="text-[#8892b0] py-4 max-w-[750px]">
+        <p className="text-[#8892b0] py-4 max-w-[770px]">
           I just graduated from {''}
           <a
             href="https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react"
@@ -17,7 +17,7 @@ export const Home = () => {
           >
             OpenClassRoom's front-end javascript react course
           </a>{' '}
-          and now looking for a job
+          and I am now looking for a job
         </p>
         <div>
           {/* The group classname here is to make the rotate-90 effect apply when the user points the button too */}
