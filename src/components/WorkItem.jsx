@@ -12,13 +12,16 @@ export const WorkItem = ({ img, codeURL, demoURL, name, stacks }) => {
     <div
       /* The reason backticks are needed here instead of regular quotes is because the style property is a JavaScript object, 
       and the backgroundImage property needs to be written as a CSS-style string with a URL value. */
-      /* content-div is a custom property set in index.css */
-      style={{ backgroundImage: `url(${img})` }}
-      className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+      // The linear gradient is here to directly control the opacity of the background image without affecting other elements within the component.
+      style={{
+        backgroundImage: `url(${img})`,
+      }}
+      /* the class 'content-div' is a custom property set in index.css */
+      className="shadow-lg shadow-[#040c16] group container rounded-md content-div flex items-center justify-center"
     >
       {/* Hover effects */}
-      <div className="group-hover:opacity-100 sm:flex-col sm:gap-8 flex items-center gap-2 opacity-0">
-        <span className="sm:text-2xl text-md font-bold tracking-wider text-white">{name}</span>
+      <div className="group-hover:opacity-100 sm:flex-col sm:gap-8 sm:opacity-0 flex items-center gap-2">
+        <span className="sm:text-2xl text-md sm:text-white sm:font-bold font-extrabold tracking-wider text-pink-600">{name}</span>
         <div className="flex">
           <a href={demoURL}>
             <button className="sm:px-2 sm:py-2 px-1 py-[2px] m-2 sm:text-lg text-md font-bold text-center text-gray-700 bg-white rounded-lg hover:opacity-[85%]">

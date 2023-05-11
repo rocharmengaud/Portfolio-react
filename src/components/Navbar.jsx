@@ -33,7 +33,7 @@ export const Navbar = () => {
       </div>
       <MobileMenu handleClick={handleClick} nav={nav} />
       {/* Social icons */}
-      <div className="lg:flex fixed bottom-0 left-0 flex-col sm:top-[75%]">
+      <div className="fixed bottom-0 right-0 sm:left-0 sm:top-[75%]">
         <ul>
           {social.map((social) => (
             <Social key={social.name} {...social} />
