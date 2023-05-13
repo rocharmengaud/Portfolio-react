@@ -1,6 +1,11 @@
 import React from 'react';
 import WorkIMG from '../assets/projects/workImg.jpeg';
 import RealEstate from '../assets/projects/realestate.jpg';
+import KasaImg from '../assets/projects/KasaWeb.png';
+import ShoppingAppImg from '../assets/projects/ShoppingAppImg.png';
+import WeatherAppImg from '../assets/projects/WeatherAppImg.png';
+import NetflouixImg from '../assets/projects/NetflouixImg.png';
+
 import { WorkItem } from './WorkItem';
 
 export const Work = () => {
@@ -14,33 +19,33 @@ export const Work = () => {
       id: 1,
     },
     {
-      img: RealEstate,
+      img: NetflouixImg,
       codeURL: 'https://github.com/rocharmengaud/netflix-clone',
-      demoURL: '/',
+      demoURL: 'https://netflouix-rocharmengaud.vercel.app/',
       name: 'Netflix Clone',
       stacks: 'React, Tailwind, Next, Firebase, & Vercel',
       id: 2,
     },
     {
-      img: WorkIMG,
+      img: WeatherAppImg,
       codeURL: 'https://github.com/rocharmengaud/Weather-app',
-      demoURL: '/',
+      demoURL: 'https://weather-app-rocharmengaud.vercel.app/',
       name: 'Weather app',
       stacks: 'React, Next, Typescript, Tailwind, Fetch & Vercel',
       id: 3,
     },
     {
-      img: RealEstate,
+      img: ShoppingAppImg,
       codeURL: 'https://github.com/rocharmengaud/Shopping-app',
-      demoURL: '/',
+      demoURL: 'https://shopping-app-rocharmengaud.vercel.app/',
       name: 'Shopping app',
       stacks: 'Vite, React, TypeScript, React-Bootstrap, Bootstrap css & Vercel',
       id: 4,
     },
     {
-      img: WorkIMG,
+      img: KasaImg,
       codeURL: 'https://github.com/rocharmengaud/Kasa',
-      demoURL: '/',
+      demoURL: 'https://kasa-rocharmengaud.vercel.app/',
       name: 'Kasa (AirBNB)',
       stacks: 'React, Tailwind, JSON Data & Vercel',
       id: 5,
