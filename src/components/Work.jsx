@@ -1,19 +1,19 @@
 import React from 'react';
-import WorkIMG from '../assets/projects/workImg.jpeg';
 import RealEstate from '../assets/projects/realestate.jpg';
 import KasaImg from '../assets/projects/KasaWeb.png';
 import ShoppingAppImg from '../assets/projects/ShoppingAppImg.png';
 import WeatherAppImg from '../assets/projects/WeatherAppImg.png';
 import NetflouixImg from '../assets/projects/NetflouixImg.png';
+import TwitturImg from '../assets/projects/TwitturWeb.png';
 
 import { WorkItem } from './WorkItem';
 
 export const Work = () => {
   const workItems = [
     {
-      img: WorkIMG,
+      img: TwitturImg,
       codeURL: 'https://github.com/rocharmengaud/twitter-clone',
-      demoURL: '/',
+      demoURL: 'https://twittur-rocharmengaud.vercel.app/',
       name: 'Twitter Clone',
       stacks: 'React, Tailwind, Next, Prisma, MongoDB, Axios, NextAuth & Vercel',
       id: 1,
