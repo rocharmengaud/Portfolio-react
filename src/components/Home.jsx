@@ -21,7 +21,7 @@ export const Home = () => {
         </p>
         <div>
           {/* The group classname here is to make the rotate-90 effect apply when the user points the button too */}
-          <button className="group hover:bg-pink-600 hover:border-pink-600 flex items-center px-6 py-3 my-2 text-white border-2">
+          <button className="group hover:bg-pink-600 hover:border-pink-600 z-10 flex items-center px-6 py-3 my-2 text-white border-2">
             <Link to="work" smooth={true} duration={500}>
               Click to scroll to my work
             </Link>

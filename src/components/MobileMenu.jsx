@@ -23,6 +23,11 @@ export const MobileMenu = ({ handleClick, nav }) => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="learning" smooth={smoothScroll} duration={scrollDuration}>
+            Learning
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="work" smooth={smoothScroll} duration={scrollDuration}>
             Work
           </Link>

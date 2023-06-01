@@ -11,12 +11,12 @@ export const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   const social = [
-    { name: 'Linked In', icon: <FaLinkedin size={30} />, url: '/', bgColor: 'bg-blue-600' },
+    { name: 'Linked In', icon: <FaLinkedin size={30} />, url: 'https://www.linkedin.com/in/roch-armengaud-07b433277/', bgColor: 'bg-blue-600' },
     { name: 'Github', icon: <FaGithub size={30} />, url: 'https://github.com/rocharmengaud', bgColor: 'bg-[#333333]' },
     {
       name: 'Resume',
       icon: <BsFillPersonLinesFill size={30} />,
-      url: 'https://mega.nz/file/19MFSZ5C#lKgR-DZwBGZeW5ohIw6D6eQuIAjVx4227-JoeYG0j-s',
+      url: 'https://drive.google.com/file/d/16OdkQde1ox2f2PANccYkf2Y_GOQKog4v/view?usp=drive_link',
       bgColor: 'bg-[#6fc2b0]',
     },
   ];

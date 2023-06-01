@@ -14,7 +14,6 @@ export const Skills = () => {
     { name: 'JavaScript', icon: JavaScript },
     { name: 'React', icon: ReactIMG },
     { name: 'Next JS', icon: NextJs },
-    // { name: 'TypeScript', icon: TypeScript },
     { name: 'Tailwind CSS', icon: TailwindCss },
   ];
 
