@@ -65,7 +65,7 @@ export const Work = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600">Work</p>
-          <p className="py-6">Check out all my recent work</p>
+          <p className="py-6">Check out all my recent work :</p>
         </div>
         <div className="sm:grid-cols-2 md:grid-cols-3 grid gap-4">
           {workItems.map((workItem) => (

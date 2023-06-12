@@ -22,7 +22,7 @@ export const Learning = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="inline text-4xl text-gray-300 border-b-4 border-pink-600">Learning</p>
-          <p className="py-4">These are the technologies I recently used and still learning about them</p>
+          <p className="py-4">These are the technologies I recently used and still learning about them :</p>
         </div>
         <div className="sm:grid-cols-3 grid w-full grid-cols-2 gap-4 py-6 text-center">
           {skills.map((skill) => (

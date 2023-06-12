@@ -17,7 +17,7 @@ export const About = () => {
           <div>
             <p>
               I'm looking for a front-end job, you can scroll down to see which technologies i'm familiar with and which am I learning. Also, feel
-              free to click on any of my projects in the work section to visit the website or the associated coding repository.
+              free to click on any of my projects in the work section to visit the website or the associated coding repository
             </p>
           </div>
         </div>
