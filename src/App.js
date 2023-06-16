@@ -6,6 +6,11 @@ import { Skills } from './components/Skills';
 import { Learning } from './components/Learning';
 import { Work } from './components/Work';
 import { InfoModal } from './components/InfoModal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Initialize AOS
+AOS.init();
 
 function App() {
   return (

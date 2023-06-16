@@ -22,16 +22,11 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
+      <a href="/">
         <img src={RAlogo} alt="Website logo" style={{ width: '80px' }}></img>
-      </div>
+      </a>
       <Menu />
-      {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
-      <MobileMenu handleClick={handleClick} nav={nav} />
       {/* Social icons */}
       <div className="fixed bottom-0 right-0 sm:left-0 sm:top-[75%]">
         <ul>
@@ -40,6 +35,11 @@ export const Navbar = () => {
           ))}
         </ul>
       </div>
+      {/* Hamburger */}
+      <div onClick={handleClick} className="md:hidden z-20">
+        {!nav ? <FaBars className="hover:text-sky-300" /> : <FaTimes className="hover:text-red-500" />}
+      </div>
+      <MobileMenu handleClick={handleClick} nav={nav} />
     </div>
   );
 };
