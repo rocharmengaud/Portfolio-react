@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import React, { useRef } from 'react';
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import RAlogo from '../assets/RA_logo.png';
 import { Social } from './Social';
@@ -7,8 +7,12 @@ import { Menu } from './Menu';
 import { MobileMenu } from './MobileMenu';
 
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const mobileMenuRef = useRef(null);
+
+  const openDialog = () => {
+    console.log('test');
+    mobileMenuRef.current.showModal();
+  };
 
   const social = [
     { name: 'Linked In', icon: <FaLinkedin size={30} />, url: 'https://www.linkedin.com/in/roch-armengaud-07b433277/', bgColor: 'bg-blue-600' },
@@ -36,10 +40,8 @@ export const Navbar = () => {
         </ul>
       </div>
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-20">
-        {!nav ? <FaBars className="hover:text-sky-300" /> : <FaTimes className="hover:text-red-500" />}
-      </div>
-      <MobileMenu handleClick={handleClick} nav={nav} />
+      <FaBars className="hover:text-sky-300 text-2xl" onClick={openDialog} />
+      <MobileMenu mobileMenuRef={mobileMenuRef} />
     </div>
   );
 };

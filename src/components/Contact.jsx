@@ -7,7 +7,7 @@ export const Contact = () => {
         method="POST"
         action="https://getform.io/f/62705f5e-1a70-4374-b0bb-bbdf52735b5e"
         className="flex flex-col max-w-[600px] w-full"
-        data-aos="fade-up"
+        data-aos="flip-down"
         data-aos-offset="300"
         data-aos-duration="1500"
         data-aos-delay="200"
