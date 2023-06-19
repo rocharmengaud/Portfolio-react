@@ -9,6 +9,7 @@ import { InfoModal } from './components/InfoModal';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Socials } from './components/Socials';
 
 // Initialize AOS
 AOS.init();
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <InfoModal />
+      <Socials />
       <Navbar />
       <Home />
       <About />

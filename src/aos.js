@@ -1,10 +1,9 @@
+// ANIMATIONS ON SCROLL
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 
 AOS.init();
-// You can also pass an optional settings object
-// below listed default settings
+
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
