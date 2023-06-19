@@ -5,7 +5,7 @@ export const About = () => {
     <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
       <div
         className="flex flex-col items-center justify-center w-full h-full"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-offset="500"
         data-aos-duration="1500"
         data-aos-delay="200"
