@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import Lottie from 'lottie-react';
+import animationData from '../assets/workAnimation.json';
 
 export const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
-      {/* Container */}
+    <div name="home" className="w-full h-screen bg-[#0a192f] relative">
+      <Lottie animationData={animationData} className="absolute right-0 w-[60%] h-[50%] top-[55%] sm:top-[50%]" loop autoPlay />
       <div
-        className="max-w-[1000px] h-full mx-auto px-8 flex flex-col justify-center"
-        data-aos="fade-up"
+        className="max-w-[1000px] h-full mx-auto px-8 flex flex-col justify-center relative"
+        data-aos="fade-in"
         data-aos-duration="1500"
         data-aos-delay="200"
       >
         <p className="text-white">Hello, my name is</p>
         <h1 className="text-2xl sm:text-4xl font-bold text-[#ccd6f6]">Roch ARMENGAUD</h1>
         <h2 className="text-2xl sm:text-4xl font-bold text-[#8892b0]">I'm a junior front-end developer</h2>
-        <p className="text-[#8892b0] py-4 max-w-[770px]">
+        <p className="text-white py-4 max-w-[770px]">
           I just graduated from {''}
           <a
             href="https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react"
-            className="hover:underline text-[#219ebc] cursor-pointer"
+            className="hover:underline text-[#219ebc] cursor-pointer z-50"
           >
             OpenClassRoom's front-end javascript react course
           </a>{' '}
