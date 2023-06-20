@@ -18,7 +18,7 @@ export const Navbar = () => {
         <img src={RAlogo} alt="Website logo" style={{ width: '80px' }}></img>
       </a>
       <Menu />
-      <FaBars className="hover:text-sky-300 text-2xl" onClick={openDialog} />
+      <FaBars className="md:hidden hover:text-sky-300 text-2xl" onClick={openDialog} />
       <MobileMenu mobileMenuRef={mobileMenuRef} />
     </div>
   );

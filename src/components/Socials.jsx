@@ -14,7 +14,7 @@ export const Socials = () => {
     },
   ];
   return (
-    <div className="fixed bottom-0 left-0 top-[75%] z-10">
+    <div className="fixed bottom-0 left-0 top-[80%] sm:top-[75%] z-10">
       <ul>
         {social.map((social) => (
           <Social key={social.name} {...social} />
