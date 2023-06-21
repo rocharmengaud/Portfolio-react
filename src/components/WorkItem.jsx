@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { InfoModal } from './InfoModal';
 
+// THIS COMPONENT IS NOT USED ANYMORE
+
+// IT WAS A PLACEHOLDER FOR THE CAROUSEL DURING DEVELOPMENT
+
 export const WorkItem = ({ img, codeURL, demoURL, name, stacks }) => {
   const [modal, setModal] = useState(false);
 

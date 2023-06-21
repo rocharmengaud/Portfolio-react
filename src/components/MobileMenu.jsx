@@ -6,6 +6,7 @@ export const MobileMenu = ({ mobileMenuRef }) => {
   const scrollDuration = 500;
   const smoothScroll = true;
 
+  // Here, i'm using refs because of the <dialog> html tag
   const dialogRef = useRef(null);
 
   // Expose the showModal and close methods to the parent component

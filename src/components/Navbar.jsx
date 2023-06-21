@@ -8,7 +8,6 @@ export const Navbar = () => {
   const mobileMenuRef = useRef(null);
 
   const openDialog = () => {
-    console.log('test');
     mobileMenuRef.current.showModal();
   };
 

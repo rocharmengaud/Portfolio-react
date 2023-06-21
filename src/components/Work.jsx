@@ -6,24 +6,24 @@ import NetflouixImg from '../assets/projects/NetflouixImg.png';
 import TwitturImg from '../assets/projects/TwitturWeb.png';
 import WorkInProgress from '../assets/projects/wip.jpg';
 
-import { WorkItem } from './WorkItem';
+import { Carousel } from './Carousel';
 
 export const Work = () => {
   const workItems = [
-    {
-      img: TwitturImg,
-      codeURL: 'https://github.com/rocharmengaud/twitter-clone',
-      demoURL: 'https://twittur-rocharmengaud.vercel.app/',
-      name: 'Twitter Clone',
-      stacks: 'React, Tailwind, Next, Prisma, MongoDB, Axios, NextAuth & Vercel',
-      id: 1,
-    },
     {
       img: NetflouixImg,
       codeURL: 'https://github.com/rocharmengaud/netflix-clone',
       demoURL: 'https://netflouix-rocharmengaud.vercel.app/',
       name: 'Netflix Clone',
       stacks: 'React, Tailwind, Next, Firebase, & Vercel',
+      id: 1,
+    },
+    {
+      img: TwitturImg,
+      codeURL: 'https://github.com/rocharmengaud/twitter-clone',
+      demoURL: 'https://twittur-rocharmengaud.vercel.app/',
+      name: 'Twitter Clone',
+      stacks: 'React, Tailwind, Next, Prisma, MongoDB, Axios, NextAuth & Vercel',
       id: 2,
     },
     {
@@ -73,11 +73,7 @@ export const Work = () => {
           <p className="inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600">Work</p>
           <p className="py-6">Check out all my recent work :</p>
         </div>
-        <div className="sm:grid-cols-2 md:grid-cols-3 grid gap-4">
-          {workItems.map((workItem) => (
-            <WorkItem key={workItem.id} {...workItem} />
-          ))}
-        </div>
+        <Carousel workItems={workItems} />
       </div>
     </div>
   );
