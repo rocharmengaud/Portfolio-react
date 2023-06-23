@@ -4,7 +4,7 @@ import ShoppingAppImg from '../assets/projects/ShoppingAppImg.png';
 import WeatherAppImg from '../assets/projects/WeatherAppImg.png';
 import NetflouixImg from '../assets/projects/NetflouixImg.png';
 import TwitturImg from '../assets/projects/TwitturWeb.png';
-import WorkInProgress from '../assets/projects/wip.jpg';
+import Loading from '../assets/projects/loading.jpg';
 
 import { Carousel } from './Carousel';
 
@@ -51,11 +51,11 @@ export const Work = () => {
       id: 5,
     },
     {
-      img: WorkInProgress,
+      img: Loading,
       codeURL: '/',
       demoURL: '/',
       name: 'Music Store',
-      stacks: 'WIP',
+      stacks: 'Work in progress',
       id: 6,
     },
   ];
