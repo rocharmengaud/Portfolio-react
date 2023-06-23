@@ -1,4 +1,5 @@
 import React from 'react';
+
 import KasaImg from '../assets/projects/KasaWeb.png';
 import ShoppingAppImg from '../assets/projects/ShoppingAppImg.png';
 import WeatherAppImg from '../assets/projects/WeatherAppImg.png';
@@ -6,12 +7,19 @@ import NetflouixImg from '../assets/projects/NetflouixImg.png';
 import TwitturImg from '../assets/projects/TwitturWeb.png';
 import Loading from '../assets/projects/loading.jpg';
 
+import KasaMobileImg from '../assets/projects-mobile/kasa-mobile.png';
+import ShoppingAppMobileImg from '../assets/projects-mobile/shoppingApp-mobile.png';
+import WeatherAppMobileImg from '../assets/projects-mobile/weatherApp-mobile.png';
+import NetflouixMobileImg from '../assets/projects-mobile/netflouix-mobile.png';
+import TwitturMobileImg from '../assets/projects-mobile/twittur-mobile.png';
+
 import { Carousel } from './Carousel';
 
 export const Work = () => {
   const workItems = [
     {
       img: NetflouixImg,
+      mobileImg: NetflouixMobileImg,
       codeURL: 'https://github.com/rocharmengaud/netflix-clone',
       demoURL: 'https://netflouix-rocharmengaud.vercel.app/',
       name: 'Netflix Clone',
@@ -20,6 +28,7 @@ export const Work = () => {
     },
     {
       img: TwitturImg,
+      mobileImg: TwitturMobileImg,
       codeURL: 'https://github.com/rocharmengaud/twitter-clone',
       demoURL: 'https://twittur-rocharmengaud.vercel.app/',
       name: 'Twitter Clone',
@@ -28,6 +37,7 @@ export const Work = () => {
     },
     {
       img: WeatherAppImg,
+      mobileImg: WeatherAppMobileImg,
       codeURL: 'https://github.com/rocharmengaud/Weather-app',
       demoURL: 'https://weather-app-rocharmengaud.vercel.app/',
       name: 'Weather App',
@@ -36,6 +46,7 @@ export const Work = () => {
     },
     {
       img: ShoppingAppImg,
+      mobileImg: ShoppingAppMobileImg,
       codeURL: 'https://github.com/rocharmengaud/Shopping-app',
       demoURL: 'https://shopping-app-rocharmengaud.vercel.app/',
       name: 'Shopping App',
@@ -44,6 +55,7 @@ export const Work = () => {
     },
     {
       img: KasaImg,
+      mobileImg: KasaMobileImg,
       codeURL: 'https://github.com/rocharmengaud/Kasa',
       demoURL: 'https://kasa-rocharmengaud.vercel.app/',
       name: 'Kasa (AirBNB)',
@@ -52,6 +64,7 @@ export const Work = () => {
     },
     {
       img: Loading,
+      mobileImg: Loading,
       codeURL: '/',
       demoURL: '/',
       name: 'Music Store',

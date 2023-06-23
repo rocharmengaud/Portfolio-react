@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { InfoModal } from './InfoModal';
 import { BsChevronCompactRight, BsChevronCompactLeft } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
@@ -6,6 +6,7 @@ import { RxDotFilled } from 'react-icons/rx';
 export const Carousel = ({ workItems }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [modal, setModal] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const prevSlide = () => {
     const isFirstImg = currentIndex === 0;
@@ -27,11 +28,23 @@ export const Carousel = ({ workItems }) => {
     setModal(!modal);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 639);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="sm:max-w-[600px] max-w-[300px] sm:h-[600px] h-[400px] w-full relative mx-auto flex flex-col justify-center items-center">
         <div
-          style={{ backgroundImage: `url(${workItems[currentIndex].img})`, filter: 'blur(1px)' }}
+          style={{ backgroundImage: `url(${isMobile ? workItems[currentIndex].mobileImg : workItems[currentIndex].img})`, filter: 'blur(1px)' }}
           className="rounded-2xl w-full h-full bg-left-top bg-cover shadow-lg shadow-[#040c16] relative flex justify-center items-center duration-500"
         ></div>
         <div className="sm:gap-12 flex flex-col items-center gap-4 absolute top-[40%]">
