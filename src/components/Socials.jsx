@@ -9,7 +9,7 @@ export const Socials = () => {
     {
       name: 'Resume',
       icon: <BsFillPersonLinesFill size={30} />,
-      url: 'https://drive.google.com/file/d/16OdkQde1ox2f2PANccYkf2Y_GOQKog4v/view?usp=drive_link',
+      url: 'https://drive.google.com/file/d/1ca5iESjOBTW6Hsk9nyuIOhQ6qNk01z39/view?usp=drive_link',
       bgColor: 'bg-[#6fc2b0]',
     },
   ];
