@@ -5,7 +5,6 @@ import ShoppingAppImg from '../assets/projects/ShoppingAppImg.png';
 import WeatherAppImg from '../assets/projects/WeatherAppImg.png';
 import NetflouixImg from '../assets/projects/NetflouixImg.png';
 import TwitturImg from '../assets/projects/TwitturWeb.png';
-import Loading from '../assets/projects/loading.jpg';
 
 import KasaMobileImg from '../assets/projects-mobile/kasa-mobile.png';
 import ShoppingAppMobileImg from '../assets/projects-mobile/shoppingApp-mobile.png';
@@ -61,15 +60,6 @@ export const Work = () => {
       name: 'Kasa (AirBNB)',
       stacks: 'React, Tailwind, JSON Data & Vercel',
       id: 5,
-    },
-    {
-      img: Loading,
-      mobileImg: Loading,
-      codeURL: '/',
-      demoURL: '/',
-      name: 'Music Store',
-      stacks: 'Work in progress',
-      id: 6,
     },
   ];
 
