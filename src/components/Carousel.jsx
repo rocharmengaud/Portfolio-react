@@ -46,7 +46,7 @@ export const Carousel = ({ workItems }) => {
         <h1 className="sm:text-4xl text-2xl font-bold text-gray-300">{workItems[currentIndex].name}</h1>
         <div
           style={{ backgroundImage: `url(${isMobile ? workItems[currentIndex].mobileImg : workItems[currentIndex].img})`, filter: 'blur(1px)' }}
-          className="rounded-2xl w-full h-full bg-left-top bg-cover shadow-lg shadow-[#040c16] relative flex justify-center items-center duration-500 my-4"
+          className="rounded-2xl w-full h-full sm:bg-left bg-top bg-cover shadow-lg shadow-[#040c16] relative flex justify-center items-center duration-500 my-4"
         ></div>
         <div className="sm:gap-12 flex flex-col items-center gap-4 absolute top-[50%]">
           <div className="sm:gap-6 flex justify-center gap-2">
