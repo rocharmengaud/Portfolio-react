@@ -2,7 +2,7 @@ export const InfoModal = ({ modal, toggleModal, stacks }) => {
   return (
     <>
       {modal && (
-        <div onClick={toggleModal} className="fixed top-0 bottom-0 left-0 right-0 z-10 w-full h-full">
+        <div className="fixed top-0 bottom-0 left-0 right-0 z-10 w-full h-full">
           <div className="bg-[#0a192f] fixed top-0 bottom-0 left-0 right-0 w-full h-full">
             <div className="absolute top-[25%] left-[50%] -translate-x-1/2 leading-[1.4] bg-white py-24 sm:px-40 sm:py-40 rounded-md text-center min-w-[350px] sm:min-w-[600px]">
               <div className="flex flex-col">
