@@ -7,6 +7,7 @@ export const Carousel = ({ workItems }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [modal, setModal] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [loadedImages, setLoadedImages] = useState([]);
 
   const prevSlide = () => {
     const isFirstImg = currentIndex === 0;
@@ -40,12 +41,25 @@ export const Carousel = ({ workItems }) => {
     };
   }, []);
 
+  useEffect(() => {
+    const imagePreload = workItems.map((item) => {
+      const img = new Image();
+      img.src = isMobile ? item.mobileImg : item.img;
+      return img;
+    });
+
+    setLoadedImages(imagePreload);
+  }, [isMobile, workItems]);
+
   return (
     <>
       <div className="sm:max-w-[600px] max-w-[300px] sm:h-[600px] h-[400px] w-full relative mx-auto flex flex-col justify-center items-center">
         <h1 className="sm:text-4xl text-2xl font-bold text-gray-300">{workItems[currentIndex].name}</h1>
         <div
-          style={{ backgroundImage: `url(${isMobile ? workItems[currentIndex].mobileImg : workItems[currentIndex].img})`, filter: 'blur(1px)' }}
+          style={{
+            backgroundImage: `url(${isMobile ? loadedImages[currentIndex]?.src : loadedImages[currentIndex]?.src})`,
+            filter: 'blur(1px)',
+          }}
           className="rounded-2xl w-full h-full sm:bg-left bg-top bg-cover shadow-lg shadow-[#040c16] relative flex justify-center items-center duration-500 my-4"
         ></div>
         <div className="sm:gap-12 flex flex-col items-center gap-4 absolute top-[50%]">
